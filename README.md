@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 	<h1 align="center">Hello there</h1>
 <p align="center">
