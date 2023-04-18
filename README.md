@@ -28,8 +28,6 @@
 	<a href="https://github.com/zet1r/42-minishell">Minishell</a>
 	<a>| Shell Implementation</a>
 	<br>
-</p>
-
 <p align="center">
 <img src="https://i.ibb.co/YR2p9jP/assin.png" alt="assin" border="0">
 </p>
