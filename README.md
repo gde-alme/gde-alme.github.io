@@ -1,5 +1,4 @@
-<html lang="en">
-	<h1 align="center">Hello there</h1>
+<h1 align="center">Hello there</h1>
 <p align="center">
 <img src="https://i.ibb.co/qCPCpmn/tools.png" alt="tools" border="0">
 </p>
@@ -34,4 +33,3 @@
 <p align="center">
 <img src="https://i.ibb.co/YR2p9jP/assin.png" alt="assin" border="0">
 </p>
-</html>
