@@ -1,23 +1,31 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div id="navbar-placeholder"></div>
+<!doctype html>
+<html>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('navbar-placeholder').innerHTML = html;
-        })
-        .catch(error => console.error('Error loading the navbar:', error));
-    });
-  </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Gonçalo Lopes</title>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-gray-800 p-6">
+            <div class="flex gap-4">
+                <a href="/" class="text-white">Home</a>
+                <a href="/about" class="text-white">About</a>
+            </div>
+        </nav>
+    </header>
+    <main class="p-6 text-center items-center mt-4">
+        <h1 class="text-4xl">
+            Welcome!
+        </h1>
+        <p class="text-lg mt-4">
+            This is my personal website. <br/>
+            Here you can find my cv, public work and tutorials. 
+        </p>
+    </main>
 </body>
+
 </html>
