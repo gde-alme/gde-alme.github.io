@@ -1,24 +1,23 @@
-<!doctype html>
-<html>
-
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Gonçalo Lopes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
 <body>
-    <header>
-        <nav class="bg-gray-800 p-6">
-            <u class="flex gap-4">
-                <li>
-                    <a href="/" class="text-white">Home</a>
-                </li>
-                <li>
-                    <a href="/about" class="text-white">About</a>
-                </li>
-            </u>
-        </nav>
-    </header>
+  <div id="navbar-placeholder"></div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('navbar-placeholder').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading the navbar:', error));
+    });
+  </script>
+</body>
 </html>
