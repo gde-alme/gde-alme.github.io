@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .css_expand img {
+            transition: all 2s ease;
+            --scale-factor: 2;
+        }
+
+        .css_expand img:hover {
+            transform: scale(var(--scale-factor));
+        }
+    </style>
+
     <title>Gonçalo Lopes</title>
 </head>
 
@@ -60,7 +71,7 @@
             </h2>
             <div class="mt-8">
                 <div class=" flex flex-col justify-center items-center">
-                    <p class="text-lg">
+                    <p class="text-xl">
                         I'm very comfortable using C having created several programs and replicated many C libraries /
                         programs. <br />
                         <br />
@@ -70,52 +81,86 @@
                     </p>
                     <div class="flex flex-col items-center justify-center">
                         <div class="flex flex-row gap-3">
-                            <div class="flex flex-col items-center justify-center">
-                                <img src="public/minishell_source_code.png" alt="minishell source code" width="500" />
+                            <div
+                                class="flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110">
+                                <img src="public/minishell_source_code.png" alt="minishell source code" width="400" />
                                 <span class="">(Command parser from string to node)</span>
                             </div>
-                            <div class="flex flex-col items-center justify-center">
-                                <img src="public/minishell_heredoc.png" alt="minishell source code" height="400" />
+                            <div
+                                class="flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110">
+                                <img src="public/minishell_heredoc.png" alt="minishell source code" height="300"
+                                    width="302" />
                                 <span class="">(Heredoc implementation)</span>
                             </div>
                         </div>
-                        <div class="mt-6 flex flex-col items-center justify-center">
-                            <img src="public/minishell_display.gif" alt="minishell display" width="600" />
+                        <div
+                            class="mt-6 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110">
+                            <img src="public/minishell_display.gif" alt="minishell display" width="500" />
                             <span class="">(The shell implementation running)</span>
                         </div>
                     </div>
-                    <p class="mt-8 mb-6 text-lg">
+                    <p class="mt-24 mb-10 text-lg">
                         Created a raycasting engine in C using the minilibx library with minimal utilities and externals
                         functions
                     </p>
                     <div class="flex flex-col items-center justify-center">
-                        <img class="mt-4" src="public/cub3d_dda_algo.png" alt="cub3d source code" width="500" />
-                        <span class="">(Implementation of dda algorithm)</span>
+                        <div
+                            class="flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110">
+                            <img class="mt-4" src="public/cub3d_dda_algo.png" alt="cub3d source code" width="400" />
+                            <span class="mb-2">(Implementation of dda algorithm)</span>
+                        </div>
                         <div class="flex flex-row mt-4 gap-4">
-                            <div class="flex flex-col items-center justify-center">
-                                <img src="public/cub3d_display3d.png" alt="cub3d source code" width="532"
+                            <div
+                                class="flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110">
+                                <img src="public/cub3d_display3d.png" alt="cub3d source code" width="426"
                                     height="300" />
                                 <span class="">(Simulating a 3D view of the map)</span>
                             </div>
-                            <div class="flex flex-col items-center justify-center">
-                                <img src="public/cub3d_display_wall.png" alt="cub3d source code" width="500"
+                            <div
+                                class="flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110">
+                                <img src="public/cub3d_display_wall.png" alt="cub3d source code" width="400"
                                     height="300" />
                                 <span class="">(Setting each pixel to respective color)</span>
                             </div>
                         </div>
-                        <div class="mt-6 flex flex-col items-center justify-center">
+                        <div
+                            class="mt-8 flex flex-col items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110">
                             <img src="public/cub3d_display.gif" alt="cub3d display" width="500" />
                             <span class="text-center mb-2">(A preview of the engine running)</span>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p>
-                        C++ <br />
+                <div class="flex flex-col items-center justify-center mt-16">
+                    <p class="text-xl">
+                        I'm very familiar with C++ syntax and abstraction principles, having written some projects.
                     </p>
-                    <span>cpp modules code pictures</span>
-                    <span>webserver code pictures</span>
-                    <span>webserver working pictures</span>
+                    <p class="mt-6">
+                        Wrote a C++ webserver with two peers, using C++98 and almost no externals libraries.
+                        <br />This webserver is capable of serving multiples websites
+                        <br />with diferent configurations at the same time
+                        <br />offering cookies and fast cgi.
+                    </p>
+                    <div class="flex flex-col mt-4 items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110">
+                        <div class="flex flex-row gap-2 mt-4">
+                            <div class="css_expand flex flex-col items-center justify-center">
+                                <img src="public/webserver_config.png" alt="webserver config" data-scale="8"
+                                    width="200" />
+                            </div>
+                            <div class="flex flex-col gap-5">
+                                <div class="flex flex-row gap-2">
+                                    <div class="flex flex-col gap-4">
+                                        <img src="public/exec_webserver.png" alt="execute webserver" width="300">
+                                        <img src="public/webserver_output1.png" alt="webserver output" width="300">
+                                    </div>
+                                    <img src="public/webserver_output.png" alt="webserver output" width="210">
+                                </div>
+                                <div class="css_expand">
+                                    <img src="public/webserver_working.png" alt="webserver working" width="500" data-scale="2">
+                                </div>
+                            </div>
+                        </div>
+                        <span>(example.config)</span>
+                    </div>
                 </div>
                 <div>
                     <p>
