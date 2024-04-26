@@ -41,7 +41,7 @@
             </div>
         </section>
         <section class="flex flex-col justify-center items-center mt-16 px-4">
-            <h2 id="whoami" class="text-lg">
+            <h2 id="whoami" class="text-2xl">
                 Who am I?
             </h2>
             <div class="flex flex-col md:flex-row mt-8 gap-12">
@@ -55,17 +55,36 @@
             </div>
         </section>
         <section class="flex flex-col justify-center items-center mt-16">
-            <h2 id="workexperience" class="text-lg">
+            <h2 id="workexperience" class="text-2xl">
                 Experience
             </h2>
             <div class="mt-8">
                 <div class=" flex flex-col justify-center items-center">
-                    <p>
-                        I'm very comfortable using C having created several programs and replicated C libs functions
+                    <p class="text-lg">
+                        I'm very comfortable using C having created several programs and replicated many C libraries /
+                        programs. <br />
                         <br />
                     </p>
-                    <span>lib created picture(s)</span>
-                    <p>
+                    <p class="mb-8 text-lg">
+                        Replicated the "bash shell" in C using no external libraries and only some external functions
+                    </p>
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="flex flex-row gap-3">
+                            <div class="flex flex-col items-center justify-center">
+                                <img src="public/minishell_source_code.png" alt="minishell source code" width="500" />
+                                <span class="">(Command parser from string to node)</span>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <img src="public/minishell_heredoc.png" alt="minishell source code" height="400"/>
+                                <span class="">(Heredoc implementation)</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex flex-col items-center justify-center">
+                            <img src="public/minishell_display.gif" alt="minishell display" width="600" />
+                            <span class="">(The shell implementation running)</span>
+                        </div>
+                    </div>
+                    <p class="mt-8 mb-6 text-lg">
                         Created a raycasting engine in C using the minilibx library with minimal utilities and externals
                         functions
                     </p>
@@ -74,16 +93,20 @@
                         <span class="">(Implementation of dda algorithm)</span>
                         <div class="flex flex-row mt-4 gap-4">
                             <div class="flex flex-col items-center justify-center">
-                                <img src="public/cub3d_source_code2.png" alt="cub3d source code" width="532" height="300"/>
+                                <img src="public/cub3d_source_code2.png" alt="cub3d source code" width="532"
+                                    height="300" />
                                 <span class="">(Simulating a 3D view of the map)</span>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <img src="public/cub3d_display_wall.png" alt="cub3d source code" width="500" height="300"/>
+                                <img src="public/cub3d_display_wall.png" alt="cub3d source code" width="500"
+                                    height="300" />
                                 <span class="">(Setting each pixel to respective color)</span>
                             </div>
                         </div>
-                        <span class="text-center mt-8 mb-2 text-lg">A preview of the engine running</span>
-                        <img src="public/cub3d_display.gif" alt="cub3d display" width="400" />
+                        <div class="mt-6 flex flex-col items-center justify-center">
+                            <img src="public/cub3d_display.gif" alt="cub3d display" width="500" />
+                            <span class="text-center mb-2">(A preview of the engine running)</span>
+                        </div>
                     </div>
                 </div>
                 <div>
